@@ -1,22 +1,19 @@
 function handler () {
-    URL=`echo $1 | jq '.url' | tr -d '"'`;
-    BUCKET_NAME="auto-reimbursement";
+    echo "$@";
 
-    cd /tmp;
-    mkdir -p phantomjs-installer;
-    cd phantomjs-installer;
+    cd /tmp/;
 
-    #For Linux 64 Bit and CentOS based system
-    wget "https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2";
-    yum install fontconfig freetype freetype-devel fontconfig-devel libstdc++;
+    bucket='deliveries-shivangnagaria'
+    messageId=`echo $1 | jq '.Records[0].ses.mail.messageId' | tr -d '"'`
+    aws s3 cp "s3://$bucket/$messageId" "$messageId.html"
 
-    tar -xf phantomjs-2.1.1-linux-x86_64.tar.bz2;
-    mv phantomjs-2.1.1-linux-x86_64 phantomjs-2.1.1
+    html_filename="/tmp/$messageId.html";
+    screenshot="$messageId.png"
 
-    export PATH="$PWD/phantomjs-2.1.1/bin/:$PATH";
+    export PATH="/opt/phantom-js/bin/:$PATH";
     set -x;
 
-    phantomjs phantomjs-2.1.1/examples/rasterize.js "$URL" tiger.png;
-    aws s3 cp tiger.png "s3://$BUCKET_NAME/"
+    rasterize "$html_filename" "$screenshot";
+    aws s3 cp "$screenshot" s3://auto-reimbursement/;
 }
 
