@@ -1,7 +1,12 @@
-1. Using AWS Lambda
-2. Using PhontomJS
-3. wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
-4. yum install fontconfig freetype freetype-devel fontconfig-devel libstdc++
-5. Download HTML
-6. Open html using phantomjs, save screenshot
-7. Done
+### AWS Lambda Headless Browser Layer
+
+Layer ARN: arn:aws:lambda:us-east-1:699054759624:layer:phantom-js:4
+
+#### Features:
+
+1. Take screenshots using `rasterize` command.
+
+```sh
+export PATH="/opt/phantom-js/bin/:$PATH"; # Add the layer in the path
+rasterize "$html_filename" "$screenshot"; # Read the html file and create screenshot
+```
