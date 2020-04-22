@@ -1,1 +1,0 @@
-phantomjs /opt/phantom-js/examples/rasterize.js "$1" "$2";
