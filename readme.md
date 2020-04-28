@@ -15,7 +15,6 @@ headless web testing. Full feature list and use cases can be found here: For ful
 
 #### Layer ARN 
 
----------------------------------------------------------------------------------------
 | AWS Region      |     Layer ARN                                                     | 
 | --------------  | ------------------------------------------------------------------|
 | us-east-1       |     arn:aws:lambda:us-east-1:699054759624:layer:phantom-js:4      |
@@ -34,7 +33,7 @@ headless web testing. Full feature list and use cases can be found here: For ful
 | ap-south-1      |     arn:aws:lambda:ap-south-1:699054759624:layer:phantom-js:1     |
 | ap-southeast-1  |     arn:aws:lambda:ap-southeast-1:699054759624:layer:phantom-js:1 |
 | ap-southeast-2  |     arn:aws:lambda:ap-southeast-2:699054759624:layer:phantom-js:1 |
----------------------------------------------------------------------------------------
+
 
 Note: As of now, it only supports takings screenshots using `rasterize` command but can be expanded to
 do other stuff too very easily. Pull requests are welcome. 
