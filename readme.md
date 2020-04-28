@@ -13,11 +13,11 @@ headless web testing. Full feature list and use cases can be found here: For ful
    rasterize "$html_filename" "$screenshot"; # Read the html file and create screenshot
    ```
 
-#### ARN
+#### Layer ARN 
 
 ---------------------------------------------------------------------------------------
 | AWS Region      |     Layer ARN                                                     | 
----------------------------------------------------------------------------------------
+| --------------  | ------------------------------------------------------------------|
 | us-east-1       |     arn:aws:lambda:us-east-1:699054759624:layer:phantom-js:4      |
 | us-east-2       |     arn:aws:lambda:us-east-2:699054759624:layer:phantom-js:1      |
 | us-west-1       |     arn:aws:lambda:us-west-1:699054759624:layer:phantom-js:1      |
