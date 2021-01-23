@@ -15,24 +15,24 @@ headless web testing. Full feature list and use cases can be found here: For ful
 
 #### Layer ARN 
 
-| AWS Region      |     Layer ARN                                                     | 
-| --------------  | ------------------------------------------------------------------|
-| us-east-1       |     arn:aws:lambda:us-east-1:699054759624:layer:phantom-js:4      |
-| us-east-2       |     arn:aws:lambda:us-east-2:699054759624:layer:phantom-js:1      |
-| us-west-1       |     arn:aws:lambda:us-west-1:699054759624:layer:phantom-js:1      |
-| us-west-2       |     arn:aws:lambda:us-west-2:699054759624:layer:phantom-js:1      |
-| ca-central-1    |     arn:aws:lambda:ca-central-1:699054759624:layer:phantom-js:1   |
-| sa-east-1       |     arn:aws:lambda:sa-east-1:699054759624:layer:phantom-js:1      |
-| eu-north-1      |     arn:aws:lambda:eu-north-1:699054759624:layer:phantom-js:1     |
-| eu-central-1    |     arn:aws:lambda:eu-central-1:699054759624:layer:phantom-js:1   |
-| eu-west-1       |     arn:aws:lambda:eu-west-1:699054759624:layer:phantom-js:1      |
-| eu-west-2       |     arn:aws:lambda:eu-west-2:699054759624:layer:phantom-js:1      |
-| eu-west-3       |     arn:aws:lambda:eu-west-3:699054759624:layer:phantom-js:1      |
-| ap-northeast-1  |     arn:aws:lambda:ap-northeast-1:699054759624:layer:phantom-js:1 |
-| ap-northeast-2  |     arn:aws:lambda:ap-northeast-2:699054759624:layer:phantom-js:1 |
-| ap-south-1      |     arn:aws:lambda:ap-south-1:699054759624:layer:phantom-js:1     |
-| ap-southeast-1  |     arn:aws:lambda:ap-southeast-1:699054759624:layer:phantom-js:1 |
-| ap-southeast-2  |     arn:aws:lambda:ap-southeast-2:699054759624:layer:phantom-js:1 |
+| AWS Region      |     Layer ARN                                                       |
+| --------------  | --------------------------------------------------------------------|
+| us-east-1       |     arn:aws:lambda:us-east-1:699054759624:layer:phantom-js:7        |
+| us-east-2       |     arn:aws:lambda:us-east-2:699054759624:layer:phantom-js:2        |
+| us-west-1       |     arn:aws:lambda:us-west-1:699054759624:layer:phantom-js:2        |
+| us-west-2       |     arn:aws:lambda:us-west-2:699054759624:layer:phantom-js:1        |
+| ap-south-1      |     arn:aws:lambda:ap-south-1:699054759624:layer:phantom-js:1       |
+| ap-northeast-2  |     arn:aws:lambda:ap-northeast-2:699054759624:layer:phantom-js:1   |
+| ap-southeast-1  |     arn:aws:lambda:ap-southeast-1:699054759624:layer:phantom-js:1   |
+| ap-southeast-2  |     arn:aws:lambda:ap-southeast-2:699054759624:layer:phantom-js:15  |
+| ap-northeast-1  |     arn:aws:lambda:ap-northeast-1:699054759624:layer:phantom-js:1   |
+| ca-central-1    |     arn:aws:lambda:ca-central-1:699054759624:layer:phantom-js:1     |
+| eu-central-1    |     arn:aws:lambda:eu-central-1:699054759624:layer:phantom-js:1     |
+| eu-west-1       |     arn:aws:lambda:eu-west-1:699054759624:layer:phantom-js:1        |
+| eu-west-2       |     arn:aws:lambda:eu-west-2:699054759624:layer:phantom-js:1        |
+| eu-west-3       |     arn:aws:lambda:eu-west-3:699054759624:layer:phantom-js:1        |
+| eu-north-1      |     arn:aws:lambda:eu-north-1:699054759624:layer:phantom-js:1       |
+| sa-east-1       |     arn:aws:lambda:sa-east-1:699054759624:layer:phantom-js:3        |
 
 
 Note: As of now, it only supports takings screenshots using `rasterize` command but can be expanded to
