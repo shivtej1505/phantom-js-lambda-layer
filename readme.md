@@ -38,3 +38,8 @@ headless web testing. Full feature list and use cases can be found here: For ful
 Note: As of now, it only supports takings screenshots using `rasterize` command but can be expanded to
 do other stuff too very easily. Pull requests are welcome. 
 
+
+##### Why Version Numbers are fucked up?
+
+Yeah, I tried resetting them by deleting all of them. Turns out AWS don't reset them even after deleting.
+More [here on stackoverflow](https://stackoverflow.com/questions/60824745/aws-delete-lambda-layer-still-retains-layer-version-history) 
